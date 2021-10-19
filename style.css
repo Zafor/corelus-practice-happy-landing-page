@@ -76,6 +76,17 @@ hr.ph-line {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
 }
 
+.ph-benefits img {
+  margin-bottom: 10px;
+}
+.ph-benefits span {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 400;
+  color: #404040;
+}
+
 .ph-benefits-section {
   margin-top: 50px;
   margin-bottom: 100px;
@@ -94,7 +105,7 @@ hr.ph-line {
     margin-top: 50px;
   }
   .coreplus-practice-happy-landing-page {
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .practice-happy-community {
     margin-top: -80px;

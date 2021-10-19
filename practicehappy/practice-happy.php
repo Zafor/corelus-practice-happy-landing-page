@@ -81,17 +81,18 @@
         <div class="col-md-4">
           <div class="ph-benefits">
             <img src="<?php echo get_template_directory_uri().'/practicehappy/images/ph-connect.svg'?>" alt="" />
-            <h4>Connect Together</h4>
+            <span>Connect Together</span>
             <p>
               meet, have conversations and build relationships with like-minded
-              allied health care professionals from all over Australiay
+              allied health care professionals from all over Australia
             </p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="ph-benefits">
             <img src="<?php echo get_template_directory_uri().'/practicehappy/images/learn-together.svg'?>" alt="" />
-            <h4>Learn Together</h4>
+            <span>Learn Together</span>
+            
             <p>
               expand your knowledge with our special educational events, as well
               as content and discussions in our ‘Success Tips’ and ‘Tech Talk’
@@ -102,7 +103,8 @@
         <div class="col-md-4">
           <div class="ph-benefits">
             <img src="<?php echo get_template_directory_uri().'/practicehappy/images/grow-together.svg'?>" alt="" />
-            <h4>Grow Together</h4>
+            <span>Grow Together</span>
+            
             <p>
               join profession or role specific ‘clubhouse’ groups where you can
               ask for advice, share tips, and discuss industry-related news and
