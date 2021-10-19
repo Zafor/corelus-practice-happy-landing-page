@@ -1,0 +1,105 @@
+.coreplus-practice-happy-landing-page {
+  margin-top: 50px;
+}
+.coreplus-ph-hero-text {
+  margin-top: 8rem;
+}
+
+.coreplus-ph-hero-header {
+  color: #f98731;
+}
+.cp-lp-hero-image img {
+  width: 100%;
+  margin: auto;
+}
+
+.ph-logo-line {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+hr.ph-line {
+  /* color: #f98731; */
+  border: 1px solid #f98731;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.ph-logo img {
+  width: 100%;
+  margin: auto;
+}
+
+.practice-happy-community {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.phc-text-div {
+  margin-top: 60px;
+}
+
+.phc-text {
+  margin-bottom: 50px;
+}
+.phc-button a {
+  border-radius: 5px;
+  padding: 15px 20px;
+  background-color: #f98731;
+  color: #fff;
+  text-decoration: none;
+}
+
+.phc-image img {
+  width: 100%;
+  margin: auto;
+}
+
+.practice-happy-divider {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.phb-title {
+  text-align: center;
+  color: #f98731;
+}
+
+.ph-benefits {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  padding: 15px;
+  border-bottom: 3px solid #f98731;
+  margin-bottom: 20px;
+}
+.ph-benefits:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+}
+
+.ph-benefits-section {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.practice-happy-benefits-banner {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .cp-lp-hero-image {
+    margin-top: 50px;
+  }
+  .phc-image {
+    margin-top: 50px;
+  }
+  .coreplus-practice-happy-landing-page {
+    margin-top: 10px;
+  }
+  .practice-happy-community {
+    margin-top: -80px;
+  }
+  .phc-button {
+    text-align: center;
+  }
+}
