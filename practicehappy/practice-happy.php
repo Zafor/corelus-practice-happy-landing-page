@@ -40,20 +40,18 @@
             <p>
               coreplus exists to connect, help & grow Allied Healthcare
               professionals with digital first healthcare service experiences
-              for their clients, so it only made sense that we created a
+              for your clients, so it only made sense that we created a
               community to support this vision.
               <br />
               <br />
-              Practice Happy is much more than a help forum. It’s a community
-              that you'll enjoy being part of because of the valuable content,
-              real conversations and meaningful connections.
+              The Practice Happy community is inspired to help maintain human connection throughout all our journey's within healthcare.  It's about togetherness...where we connect together, learn together and grow together.  Come and join us!
             </p>
           </div>
-          <div class="phc-button">
+          <!-- <div class="phc-button">
             <a href="https://practicehappy.coreplus.com.au/" target="_blank"
               >Practice Happy Community</a
             >
-          </div>
+          </div> -->
         </div>
         <div class="col-md-6 phc-image">
           <img src="<?php echo get_template_directory_uri().'/practicehappy/images/practice-happy-mockup.png'?>" alt="" />
