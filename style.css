@@ -8,6 +8,12 @@
 .coreplus-ph-hero-header {
   color: #f98731;
 }
+
+.coreplus-ph-h2 {
+  color: #f98731;
+  text-align: center;
+}
+
 .cp-lp-hero-image img {
   width: 100%;
   margin: auto;
@@ -65,6 +71,11 @@ hr.ph-line {
   color: #f98731;
 }
 
+.ph-benefits-title {
+  max-width: 700px;
+  margin: auto;
+}
+
 .ph-benefits {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
@@ -89,7 +100,7 @@ hr.ph-line {
 
 .ph-benefits-section {
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .practice-happy-benefits-banner {
@@ -98,6 +109,12 @@ hr.ph-line {
 }
 
 @media screen and (max-width: 991px) {
+  .phc-text {
+    text-align: center;
+  }
+  .coreplus-ph-hero-text {
+    text-align: center;
+  }
   .cp-lp-hero-image {
     margin-top: 50px;
   }
@@ -111,6 +128,140 @@ hr.ph-line {
     margin-top: -80px;
   }
   .phc-button {
+    text-align: center;
+  }
+}
+
+.ph-cta-info-desktop {
+  height: 110px;
+  background-image: url("https://qa-web.coreplus.com.au/wp-content/uploads/2022/01/bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ph-cta-info-mobile {
+  display: none;
+}
+
+.ph-cta-content {
+  margin: auto;
+  color: #fff;
+  padding: 30px;
+}
+
+.ph-cta-one {
+  background-color: #f98731;
+  text-align: center;
+  margin: 0px 25px;
+}
+.ph-cta-two {
+  background-color: #e5028b;
+  text-align: center;
+  margin: 0px 25px;
+}
+
+@media screen and (max-width: 991px) {
+  .ph-cta-info-desktop {
+    display: none;
+  }
+  .ph-cta-info-mobile {
+    display: block;
+  }
+}
+
+.ph-single-event-desktop {
+  max-width: 100%;
+  padding-left: 0;
+}
+.ph-single-event-image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.ph-single-event-image img {
+  max-width: 100%;
+}
+
+.ph-single-event-desktop img {
+  max-width: 100%;
+  /* max-height: 100%; */
+}
+.btn-ph-ed {
+  border: #f98731 1px solid;
+  color: #f98731;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.btn-ph-ed:hover {
+  background-color: #f98731;
+  border: #f98731 1px solid;
+  color: #fff;
+}
+
+.btn-ph-bn {
+  background-color: #f98731;
+  border: #f98731 1px solid;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.btn-ph-bn:hover {
+  background-color: #fff;
+  border: #f98731 1px solid;
+  color: #f98731;
+}
+
+.ph-cta-event {
+  width: 180px;
+}
+
+.ph-events-h5 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #f98731;
+}
+
+.ph-events-date-time {
+  font-size: 16px;
+  font-weight: 400;
+}
+.ph-events-details {
+  font-size: 16px;
+  font-weight: 300;
+}
+.ph-single-event {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+.ph-single-event-mobile {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .ph-single-event {
+    display: none;
+  }
+  .ph-single-event-mobile {
+    display: block;
+    text-align: center;
+  }
+}
+
+.ph-upcoming-et {
+  margin-bottom: 50px;
+  padding: 25px;
+}
+
+.parctice-happy-events {
+  margin-bottom: 100px;
+}
+.ph-event-details-block {
+  margin-top: 70px;
+}
+.ph-event {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .ph-event {
     text-align: center;
   }
 }
