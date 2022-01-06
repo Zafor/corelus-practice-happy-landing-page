@@ -3,7 +3,7 @@
  * Template Name: Practice Happy Landing Page
  */ 
 ?>
-
+<!-- phmember_only -->
 <div class="container coreplus-practice-happy-landing-page">
   <div class="row">
     <div class="col-md-6">
@@ -186,12 +186,20 @@ WP_Query($all_events_query); $numberofevents = $all_events->post_count; ?>
 
   <?php if($numberofevents==1):?>
 
-  <?php while ($all_events->have_posts()) : $all_events->the_post(); ?>
+  <?php while ($all_events->have_posts()) : $all_events->the_post(); 
+   $ph_status = get_field('phmember_only');
+  ?>
 
   <div class="row ph-single-event">
     <div class="">
-      <div class="col-md-5 ph-single-event-desktop">
+      <div class="col-md-5 ph-single-event-desktop" >
         <img src="<?php echo get_field('event_image'); ?>" alt="" />
+        <?php if($ph_status ==true): ?>
+        <div  style="position: absolute;top: 0px;left: 0px; background-color:#e5028b; padding: 10px; color:#fff"> 
+        <img style="width: 18px;height:auto;margin-top:-4px" src="<?php 
+          echo get_template_directory_uri() . "/practicehappy/images/exclam.svg";?>"  alt="">
+        Practice Happy members only</div>
+        <?php endif ?>
       </div>
       <div class="col-md-7">
         <div class="ph-event-details-block">
@@ -204,18 +212,20 @@ WP_Query($all_events_query); $numberofevents = $all_events->post_count; ?>
               <?php echo get_field('ph_event_details'); ?>
             </p>
           </div>
+          <?php if($ph_status !=true): ?>
           <div>
-            <a
-              href="<?php echo get_field('event_details_button');  ?>"
+            <!-- <a
+              href="<?php // echo get_field('event_details_button');  ?>"
               class="btn btn-ph-ed"
               >Event Details</a
-            >
+            > -->
             <a
               href="<?php echo get_field('book_now_button');  ?>"
               class="btn btn-ph-bn"
               >Book Now</a
             >
           </div>
+          <?php endif ?>
         </div>
       </div>
     </div>
@@ -226,6 +236,12 @@ WP_Query($all_events_query); $numberofevents = $all_events->post_count; ?>
       <div class="ph-event">
         <div class="ph-single-event-image">
           <img src="<?php echo get_field('event_image'); ?>" alt="" />
+          <?php if($ph_status ==true): ?>
+          <div  style="position: absolute;top: 0px;left: 25px; background-color:#e5028b; padding: 10px; color:#fff"> 
+          <img style="width: 18px;height:auto;margin-top:-4px" src="<?php 
+          echo get_template_directory_uri() . "/practicehappy/images/exclam.svg";?>" alt="">
+        Practice Happy members only</div>
+        <?php endif ?>
         </div>
         <div>
           <h5 class="ph-events-h5"><?php the_title() ?></h5>
@@ -236,18 +252,20 @@ WP_Query($all_events_query); $numberofevents = $all_events->post_count; ?>
             <?php echo get_field('ph_event_details'); ?>
           </p>
         </div>
+        <?php if($ph_status !=true): ?>
         <div>
-          <a
-            href="<?php echo get_field('event_details_button');  ?>"
+          <!-- <a
+            href="<?php // echo get_field('event_details_button');  ?>"
             class="btn btn-ph-ed"
             >Event Details</a
-          >
+          > -->
           <a
             href="<?php echo get_field('book_now_button');  ?>"
             class="btn btn-ph-bn"
             >Book Now</a
           >
         </div>
+        <?php endif ?>
       </div>
     </div>
   </div>
@@ -258,11 +276,18 @@ WP_Query($all_events_query); $numberofevents = $all_events->post_count; ?>
   <?php if($numberofevents==2):?>
 
   <div class="row">
-    <?php while ($all_events->have_posts()) : $all_events->the_post(); ?>
+    <?php while ($all_events->have_posts()) : $all_events->the_post(); 
+    $ph_status = get_field('phmember_only');
+    ?>
     <div class="col-md-6 col-sm-12">
       <div class="ph-event">
         <div class="ph-single-event-image">
-          <img src="<?php echo get_field('event_image'); ?>" alt="" />
+          <img  src="<?php echo get_field('event_image'); ?>" alt="" />
+          <?php if($ph_status ==true): ?>
+          <div  style="position: absolute;top: 0px;left: 25px; background-color:#e5028b; padding: 10px; color:#fff"> <img style="width: 18px;height:auto;margin-top:-4px" src="<?php 
+          echo get_template_directory_uri() . "/practicehappy/images/exclam.svg";?>"  alt="">
+        Practice Happy members only</div>
+        <?php endif; ?>
         </div>
         <div>
           <h5 class="ph-events-h5"><?php the_title() ?></h5>
@@ -273,18 +298,20 @@ WP_Query($all_events_query); $numberofevents = $all_events->post_count; ?>
             <?php echo get_field('ph_event_details'); ?>
           </p>
         </div>
+        <?php if($ph_status !=true): ?>
         <div>
-          <a
-            href="<?php echo get_field('event_details_button');  ?>"
+          <!-- <a
+            href="<?php //echo get_field('event_details_button');  ?>"
             class="btn btn-ph-ed"
             >Event Details</a
-          >
+          > -->
           <a
             href="<?php echo get_field('book_now_button');  ?>"
             class="btn btn-ph-bn"
             >Book Now</a
           >
         </div>
+        <?php endif; ?>
       </div>
     </div>
     <?php endwhile; ?>
@@ -295,11 +322,18 @@ WP_Query($all_events_query); $numberofevents = $all_events->post_count; ?>
   <?php if($numberofevents>2):?>
 
   <div class="row">
-    <?php while ($all_events->have_posts()) : $all_events->the_post(); ?>
+    <?php while ($all_events->have_posts()) : $all_events->the_post(); 
+    $ph_status = get_field('phmember_only');
+    ?>
     <div class="col-md-4 col-sm-12">
       <div class="ph-event">
         <div class="ph-single-event-image">
           <img src="<?php echo get_field('event_image'); ?>" alt="" />
+          <?php if($ph_status ==true): ?>
+          <div  style="position: absolute;top: 0px;left: 25px; background-color:#e5028b; padding: 10px; color:#fff"> <img style="width: 18px;height:auto;margin-top:-4px" src="<?php 
+          echo get_template_directory_uri() . "/practicehappy/images/exclam.svg";?>"  alt="">
+        Practice Happy members only</div>
+        <?php endif ?>
         </div>
         <div>
           <h5 class="ph-events-h5"><?php the_title() ?></h5>
@@ -310,18 +344,20 @@ WP_Query($all_events_query); $numberofevents = $all_events->post_count; ?>
             <?php echo get_field('ph_event_details'); ?>
           </p>
         </div>
+        <?php if($ph_status !=true): ?>
         <div>
-          <a
-            href="<?php echo get_field('event_details_button');  ?>"
+          <!-- <a
+            href="<?php //echo get_field('event_details_button');  ?>"
             class="btn btn-ph-ed"
             >Event Details</a
-          >
+          > -->
           <a
             href="<?php echo get_field('book_now_button');  ?>"
             class="btn btn-ph-bn"
             >Book Now</a
           >
         </div>
+        <?php endif ?>
       </div>
     </div>
     <?php endwhile; ?>

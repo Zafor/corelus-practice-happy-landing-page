@@ -203,6 +203,7 @@ hr.ph-line {
   color: #fff;
   margin-bottom: 10px;
   margin-top: 10px;
+  width: 100%;
 }
 .btn-ph-bn:hover {
   background-color: #fff;
